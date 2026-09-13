@@ -17,21 +17,6 @@ function tryPlayMusic() {
   }
 }
 
-document.addEventListener(
-  "click",
-  () => {
-    if (!musicStarted) {
-      bgMusic
-        .play()
-        .then(() => {
-          musicStarted = true;
-        })
-        .catch(() => {});
-    }
-  },
-  { once: false },
-);
-
 const outlinePaths = Array.from(
   document.querySelectorAll("#outlines .outline"),
 );
@@ -143,4 +128,11 @@ function fadeOutMusic() {
   }, 80);
 }
 
-window.addEventListener("load", playAnimation);
+function startExperience() {
+  const overlay = document.getElementById("startOverlay");
+  overlay.classList.add("hide");
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 650);
+  playAnimation();
+}
