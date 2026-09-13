@@ -6,6 +6,12 @@ An interactive, animated web greeting for Ganesh Chaturthi. Built entirely with 
 
 ---
 
+## 🚀 Live Demo
+
+👉 **[View Live](https://ganpati-bappa-ayush.vercel.app/)**
+
+---
+
 ## ✨ Features
 
 - **SVG Path-Drawing Animation** — Ganesha's outline is drawn stroke-by-stroke using CSS `stroke-dashoffset` animation
