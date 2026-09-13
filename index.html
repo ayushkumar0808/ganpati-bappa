@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="hi" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="hi" />
+    <title>Ganpati Bappa | Digital Aagman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Cinzel+Decorative:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="stage">
+      <div class="eyebrow">॥ श्री गणेशाय नमः ॥</div>
+
+      <div id="frame">
+        <span class="corner-bl"></span><span class="corner-br"></span>
+
+        <!-- ambient sparkles -->
+        <div class="diya" style="top: 2%; left: 8%; animation-delay: 0s"></div>
+        <div
+          class="diya"
+          style="top: 10%; left: 88%; animation-delay: 0.6s"
+        ></div>
+        <div
+          class="diya"
+          style="top: 46%; left: 2%; animation-delay: 1.1s"
+        ></div>
+        <div
+          class="diya"
+          style="top: 58%; left: 94%; animation-delay: 0.3s"
+        ></div>
+        <div
+          class="diya"
+          style="top: 76%; left: 14%; animation-delay: 1.5s"
+        ></div>
+
+        <div
+          class="petal"
+          style="left: 6%; animation-duration: 7.5s; animation-delay: 0.2s"
+        ></div>
+        <div
+          class="petal"
+          style="left: 22%; animation-duration: 9s; animation-delay: 2.1s"
+        ></div>
+        <div
+          class="petal"
+          style="left: 48%; animation-duration: 8.2s; animation-delay: 1.1s"
+        ></div>
+        <div
+          class="petal"
+          style="left: 72%; animation-duration: 10s; animation-delay: 3s"
+        ></div>
+        <div
+          class="petal"
+          style="left: 88%; animation-duration: 7.8s; animation-delay: 0.7s"
+        ></div>
+
+        <div id="svg-wrap">
+          <svg
+            id="ganesha-svg"
+            viewBox="0 0 400 480"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#f6d888" stop-opacity="0.55" />
+                <stop offset="55%" stop-color="#e8823a" stop-opacity="0.14" />
+                <stop offset="100%" stop-color="#e8823a" stop-opacity="0" />
+              </radialGradient>
+
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#f6d888" />
+                <stop offset="55%" stop-color="#d9a441" />
+                <stop offset="100%" stop-color="#a9752b" />
+              </linearGradient>
+
+              <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#d1564d" />
+                <stop offset="100%" stop-color="#7c211e" />
+              </linearGradient>
+
+              <linearGradient id="ivoryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#fbf5e9" />
+                <stop offset="100%" stop-color="#e2d3ba" />
+              </linearGradient>
+
+              <linearGradient
+                id="ivoryShadeGrad"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#ecdec2" />
+                <stop offset="100%" stop-color="#cdb98f" />
+              </linearGradient>
+
+              <linearGradient
+                id="saffronGrad"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#f2a65a" />
+                <stop offset="100%" stop-color="#c1601f" />
+              </linearGradient>
+            </defs>
+
+            <circle
+              class="halo"
+              id="halo"
+              cx="200"
+              cy="230"
+              r="185"
+              fill="url(#haloGrad)"
+            />
+
+            <g class="mandala" id="mandala">
+              <circle cx="200" cy="230" r="150" stroke-width="1" />
+              <circle
+                cx="200"
+                cy="230"
+                r="170"
+                stroke-width="1"
+                stroke-dasharray="2 6"
+              />
+              <circle
+                cx="200"
+                cy="230"
+                r="130"
+                stroke-width="1"
+                stroke-dasharray="1 5"
+              />
+            </g>
+
+            <g id="fills">
+              <path
+                class="fillshape"
+                data-group="ears"
+                fill="url(#ivoryShadeGrad)"
+                d="M118,150 C70,150 45,205 55,255 C62,292 92,308 128,300 C150,294 160,270 158,240 C155,200 150,165 118,150 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="ears"
+                fill="url(#ivoryShadeGrad)"
+                d="M282,150 C330,150 355,205 345,255 C338,292 308,308 272,300 C250,294 240,270 242,240 C245,200 250,165 282,150 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="head"
+                fill="url(#ivoryGrad)"
+                d="M200,110 C260,110 288,158 286,205 C284,248 268,278 236,290 C216,297 184,297 164,290 C132,278 116,248 114,205 C112,158 140,110 200,110 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="crown"
+                fill="url(#goldGrad)"
+                d="M150,128 C160,90 185,58 200,40 C215,58 240,90 250,128 C230,116 170,116 150,128 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="crown"
+                fill="url(#maroonGrad)"
+                d="M144,132 C170,120 230,120 256,132 C256,144 250,150 200,150 C150,150 144,144 144,132 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="trunk"
+                fill="url(#ivoryGrad)"
+                d="M188,225 C182,250 172,268 178,290 C182,305 202,312 214,300 C222,292 218,282 208,280 C216,276 220,264 210,256 C220,250 216,232 198,222 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="modak"
+                fill="url(#ivoryGrad)"
+                d="M98,260 C88,278 86,300 100,314 C110,278 118,262 130,250 C118,248 106,250 98,260 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="modak"
+                fill="url(#saffronGrad)"
+                d="M84,318 C84,304 96,294 108,296 C120,298 126,312 120,324 C112,336 90,334 84,318 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="hand2"
+                fill="url(#ivoryGrad)"
+                d="M300,265 C312,278 316,296 306,312 C296,296 288,282 278,272 C286,266 294,262 300,265 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="neck"
+                fill="url(#goldGrad)"
+                d="M158,296 C176,308 224,308 242,296 C238,314 210,326 200,326 C190,326 162,314 158,296 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="body"
+                fill="url(#ivoryGrad)"
+                d="M140,300 C110,320 96,360 104,400 C110,432 140,452 170,458 C185,461 215,461 230,458 C260,452 290,432 296,400 C304,360 290,320 260,300 C240,316 160,316 140,300 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="dhoti"
+                fill="url(#maroonGrad)"
+                d="M150,380 C140,410 140,440 158,458 C170,466 230,466 242,458 C260,440 260,410 250,380 C230,398 170,398 150,380 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="dhoti"
+                fill="url(#goldGrad)"
+                d="M150,380 C160,392 240,392 250,380 C250,388 246,394 240,398 C230,398 170,398 160,398 C154,394 150,388 150,380 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="feet"
+                fill="url(#ivoryShadeGrad)"
+                d="M162,455 C158,466 160,476 172,478 C184,480 194,474 194,462 C186,458 172,456 162,455 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="feet"
+                fill="url(#ivoryShadeGrad)"
+                d="M238,455 C242,466 240,476 228,478 C216,480 206,474 206,462 C214,458 228,456 238,455 Z"
+              />
+              <path
+                class="fillshape"
+                data-group="tilak"
+                fill="url(#maroonGrad)"
+                d="M195,175 C193,190 193,200 200,206 C207,200 207,190 205,175 C202,178 198,178 195,175 Z"
+              />
+              <ellipse
+                class="fillshape detail shade-light"
+                data-group="head"
+                cx="172"
+                cy="175"
+                rx="22"
+                ry="30"
+                opacity="0"
+                style="mix-blend-mode: soft-light"
+              />
+              <ellipse
+                class="fillshape detail shade-dark"
+                data-group="head"
+                cx="228"
+                cy="255"
+                rx="26"
+                ry="34"
+                opacity="0"
+                style="mix-blend-mode: multiply"
+              />
+              <ellipse
+                class="fillshape detail blush"
+                data-group="head"
+                cx="150"
+                cy="225"
+                rx="12"
+                ry="8"
+                opacity="0"
+                style="mix-blend-mode: multiply"
+              />
+              <ellipse
+                class="fillshape detail blush"
+                data-group="head"
+                cx="250"
+                cy="225"
+                rx="12"
+                ry="8"
+                opacity="0"
+                style="mix-blend-mode: multiply"
+              />
+              <path
+                class="fillshape detail shade-dark"
+                data-group="ears"
+                style="mix-blend-mode: multiply"
+                d="M95,190 C78,205 72,235 88,265 C96,280 112,282 120,270 C126,255 118,230 108,212 C104,203 100,195 95,190 Z"
+              />
+              <path
+                class="fillshape detail shade-dark"
+                data-group="ears"
+                style="mix-blend-mode: multiply"
+                d="M305,190 C322,205 328,235 312,265 C304,280 288,282 280,270 C274,255 282,230 292,212 C296,203 300,195 305,190 Z"
+              />
+              <path
+                class="fillshape detail shade-light"
+                data-group="trunk"
+                style="mix-blend-mode: soft-light"
+                d="M192,232 C188,252 180,266 184,284 C186,292 194,296 200,292 C196,278 192,266 196,250 C198,242 196,236 192,232 Z"
+              />
+              <ellipse
+                class="fillshape detail shade-light"
+                data-group="body"
+                cx="165"
+                cy="345"
+                rx="24"
+                ry="38"
+                opacity="0"
+                style="mix-blend-mode: soft-light"
+              />
+              <ellipse
+                class="fillshape detail shade-dark"
+                data-group="body"
+                cx="250"
+                cy="400"
+                rx="28"
+                ry="42"
+                opacity="0"
+                style="mix-blend-mode: multiply"
+              />
+
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="crown"
+                cx="200"
+                cy="72"
+                r="6"
+                fill="#c1443c"
+              />
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="crown"
+                cx="178"
+                cy="100"
+                r="4"
+                fill="#f6d888"
+              />
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="crown"
+                cx="222"
+                cy="100"
+                r="4"
+                fill="#f6d888"
+              />
+              <path
+                class="fillshape detail-strong jewel"
+                data-group="crown"
+                d="M188,138 L200,128 L212,138 L200,148 Z"
+                fill="#c1443c"
+              />
+
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="neck"
+                cx="164"
+                cy="300"
+                r="4"
+              />
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="neck"
+                cx="180"
+                cy="308"
+                r="4.5"
+              />
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="neck"
+                cx="200"
+                cy="311"
+                r="5"
+              />
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="neck"
+                cx="220"
+                cy="308"
+                r="4.5"
+              />
+              <circle
+                class="fillshape detail-strong jewel"
+                data-group="neck"
+                cx="236"
+                cy="300"
+                r="4"
+              />
+
+              <path
+                class="fillshape detail-strong jewel"
+                data-group="hand2"
+                d="M282,258 C288,254 296,256 298,262 C292,264 286,264 282,258 Z"
+              />
+              <path
+                class="fillshape detail-strong jewel"
+                data-group="modak"
+                d="M104,246 C110,242 118,244 120,250 C114,252 108,252 104,246 Z"
+              />
+            </g>
+
+            <g id="details">
+              <path class="detailline" d="M158,340 C150,370 150,410 162,440" />
+              <path class="detailline" d="M242,340 C250,370 250,410 238,440" />
+              <path class="detailline" d="M178,410 C185,420 215,420 222,410" />
+              <path class="detailline" d="M96,196 C84,212 80,236 90,258" />
+              <path class="detailline" d="M304,196 C316,212 320,236 310,258" />
+            </g>
+
+            <g id="outlines">
+              <path
+                class="outline"
+                d="M150,128 C160,90 185,58 200,40 C215,58 240,90 250,128"
+              />
+              <path
+                class="outline"
+                d="M144,132 C170,120 230,120 256,132 C256,144 250,150 200,150 C150,150 144,144 144,132 Z"
+              />
+              <path
+                class="outline"
+                d="M118,150 C70,150 45,205 55,255 C62,292 92,308 128,300 C150,294 160,270 158,240 C155,200 150,165 118,150 Z"
+              />
+              <path
+                class="outline"
+                d="M282,150 C330,150 355,205 345,255 C338,292 308,308 272,300 C250,294 240,270 242,240 C245,200 250,165 282,150 Z"
+              />
+              <path
+                class="outline"
+                d="M200,110 C260,110 288,158 286,205 C284,248 268,278 236,290 C216,297 184,297 164,290 C132,278 116,248 114,205 C112,158 140,110 200,110 Z"
+              />
+              <path class="outline" d="M170,192 C173,186 179,184 184,188" />
+              <path class="outline" d="M216,192 C219,186 225,184 230,188" />
+              <circle class="outline" cx="178" cy="200" r="7" />
+              <circle class="outline" cx="222" cy="200" r="7" />
+              <path
+                class="outline"
+                d="M195,175 C193,190 193,200 200,206 C207,200 207,190 205,175 C202,178 198,178 195,175 Z"
+              />
+              <path
+                class="outline"
+                d="M188,225 C182,250 172,268 178,290 C182,305 202,312 214,300 C222,292 218,282 208,280 C216,276 220,264 210,256 C220,250 216,232 198,222 Z"
+              />
+              <path
+                class="outline"
+                d="M98,260 C88,278 86,300 100,314 C110,278 118,262 130,250 C118,248 106,250 98,260 Z"
+              />
+              <path
+                class="outline"
+                d="M84,318 C84,304 96,294 108,296 C120,298 126,312 120,324 C112,336 90,334 84,318 Z"
+              />
+              <path
+                class="outline"
+                d="M300,265 C312,278 316,296 306,312 C296,296 288,282 278,272 C286,266 294,262 300,265 Z"
+              />
+              <path class="outline" d="M158,296 C176,308 224,308 242,296" />
+              <path
+                class="outline"
+                d="M140,300 C110,320 96,360 104,400 C110,432 140,452 170,458 C185,461 215,461 230,458 C260,452 290,432 296,400 C304,360 290,320 260,300 C240,316 160,316 140,300 Z"
+              />
+              <path
+                class="outline"
+                d="M150,380 C140,410 140,440 158,458 C170,466 230,466 242,458 C260,440 260,410 250,380 C230,398 170,398 150,380 Z"
+              />
+              <path class="outline" d="M150,380 C160,392 240,392 250,380" />
+              <path
+                class="outline"
+                d="M162,455 C158,466 160,476 172,478 C184,480 194,474 194,462 C186,458 172,456 162,455 Z"
+              />
+              <path
+                class="outline"
+                d="M238,455 C242,466 240,476 228,478 C216,480 206,474 206,462 C214,458 228,456 238,455 Z"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <div class="headline" id="headline">
+          <h1 class="reveal-line">Happy Ganesh Chaturthi 2026</h1>
+          <div class="rule reveal-line"></div>
+          <p class="reveal-line">
+            Wishing you and your family health, happiness &amp; Bappa's
+            blessings.
+          </p>
+          <div class="signature reveal-line">From a developer, Ayush 🙏</div>
+        </div>
+
+        <div id="controls">
+          <button onclick="playAnimation()">Replay</button>
+        </div>
+      </div>
+
+      <audio id="bgMusic" src="assets/ganpati_dhol.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
